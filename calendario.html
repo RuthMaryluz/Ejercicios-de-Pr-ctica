@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pages/calendario.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Práctica Fecha</title>
+    
+</head>
+<body>
+    <header>
+        <h1 style=" text-align: center;">Días laborables</h1><p></p>
+    </header>
+    <main style="padding: 7%;"
+        <div class="container-sm themed-container text-center">
+            <section >
+                <legend style="padding: 1px;">Consulta qué día fue laborable</legend><p></p>
+    
+                
+                <div class="row mb-3 text-center">
+                    <div class="col-2 justify-content-center align-items-center" style="text-align:right"><h6>Fecha</h6> </div>
+                    <div  class="col-2 themed-grid-col"><input class="form-control" id="dia" name="dia" type="text" placeholder="Día"></div>
+
+                    <div class="col-3 themed-grid-col"> <select list="mes" id="mes" class="form-control">
+                        <option value="1">Enero</option>
+                        <option value="2">Febrero</option> 
+                        <option value="3">Marzo</option>
+                        <option value="4">Abril</option>
+                        <option value="5">Mayo</option>
+                        <option value="6">Junio</option>
+                        <option value="7">Julio</option>
+                        <option value="8">Agosto</option>
+                        <option value="9">Septiembre</option>
+                        <option value="10">Octubre</option>
+                        <option value="11">Noviembre</option>
+                        <option value="12">Diciembre</option>
+                    </select>
+                </div>
+                    <div class="col-3 "><input class="form-control" id="anio" name="anio" type="text" placeholder="Año"></div>
+                    <div class="col-2 "><input class="form-control" id="tipo-anio" name="tipo-anio" type="text"><br></div>
+                </div>
+                        
+                    
+                <div class="row mb-3 text-center">
+                <div  class="col-4 "></div>
+                <div  class="col-4 ">
+
+                    <button class="btn btn-primary" onclick="calcularDia()">Calcular</button><br>
+                </div>
+                <div  class="col-4 themed-grid-col"></div>
+                </div>
+                <div class="row mb-4 text-center">
+                    <div  class="col-4 themed-grid-col"></div>
+                    <div  class="col-4 themed-grid-col"><input class="form-control" id="resultado" name="resultado" type="text"></div>
+                    <div  class="col-4 themed-grid-col"></div>
+                   
+                
+            </div>
+            </section>
+        </div>
+        
+    </main>
+    <script src="./pages/calendario.js"></script>
+
+    
+</body>
+</html>
